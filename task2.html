@@ -1,0 +1,212 @@
+About Us Page — HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="main-header">
+        <h1>About Us</h1>
+        <p class="tagline">Discover who we are and what inspires us.</p>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <h2>Who We Are</h2>
+            <p>
+                We are a creative team passionate about technology, travel,
+                entertainment, and learning new things. Our goal is to share
+                ideas and create meaningful experiences.
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>Our Favorite Movies</h2>
+
+            <!-- Ordered list -->
+            <ol class="movies">
+                <li>Interstellar</li>
+                <li>Inception</li>
+                <li>The Dark Knight</li>
+                <li>3 Idiots</li>
+                <li>Avengers: Endgame</li>
+            </ol>
+        </section>
+
+        <section class="about-section">
+            <h2>Our Favorite Cities</h2>
+
+            <!-- Unordered list -->
+            <ul class="cities">
+                <li>Agra</li>
+                <li>Delhi</li>
+                <li>Mumbai</li>
+                <li>Jaipur</li>
+                <li>Bengaluru</li>
+            </ul>
+        </section>
+
+        <section class="about-section">
+            <h2>Our Mission</h2>
+            <p class="highlight">
+                Our mission is to learn, innovate, and inspire others through
+                creativity and technology.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 About Us. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+CSS — style.css
+/* =========================================
+   1. Element Selector
+   ========================================= */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f7fb;       /* HEX color */
+    color: #333333;                  /* HEX color */
+    line-height: 1.6;
+}
+
+h2 {
+    color: #1e3a8a;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 16px;
+}
+
+
+/* =========================================
+   2. ID Selector
+   ========================================= */
+
+#main-header {
+    background-color: rgb(37, 99, 235);  /* RGB color */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#main-header h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+#main-header .tagline {
+    color: #dbeafe;
+}
+
+
+/* =========================================
+   3. Class Selector
+   ========================================= */
+
+.about-section {
+    background-color: #ffffff;
+    width: 80%;
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.highlight {
+    background-color: rgb(219, 234, 254);
+    color: #1e40af;
+    padding: 15px;
+    border-left: 5px solid #2563eb;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   4. Ordered List — Movies
+   ========================================= */
+
+.movies {
+    list-style-type: upper-roman;
+    padding-left: 40px;
+}
+
+.movies li {
+    color: #7c3aed;
+    padding: 8px;
+    margin: 5px 0;
+    background-color: #f3e8ff;
+    border-radius: 5px;
+}
+
+
+/* =========================================
+   5. Unordered List — Cities
+   ========================================= */
+
+.cities {
+    list-style-type: square;
+    padding-left: 40px;
+}
+
+.cities li {
+    color: #047857;
+    padding: 8px;
+    margin: 5px 0;
+    background-color: #d1fae5;
+    border-radius: 5px;
+}
+
+
+/* =========================================
+   6. Pseudo-class Selector
+   ========================================= */
+
+.movies li:hover {
+    background-color: #c4b5fd;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.cities li:hover {
+    background-color: #6ee7b7;
+    color: #064e3b;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   7. Footer Styling
+   ========================================= */
+
+footer {
+    text-align: center;
+    background-color: #111827;
+    color: rgb(229, 231, 235);
+    padding: 20px;
+    margin-top: 30px;
+}
+
+Selectors and cascading demonstrated
+Element selector: body, h2, p, footer
+ID selector: #main-header
+Class selector: .about-section, .highlight, .movies, .cities
+Pseudo-class selector: .movies li:hover and .cities li:hover
+HEX colors: #f4f7fb, #1e3a8a, #2563eb
+RGB colors: rgb(37, 99, 235), rgb(219, 234, 254)
+Ordered list: Movies use uppercase Roman numerals.
+Unordered list: Cities use square bullets.
+Cascading: More specific selectors such as #main-header h1 and .movies li override broader element styles where applicable.
